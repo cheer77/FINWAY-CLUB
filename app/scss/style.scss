@@ -195,6 +195,101 @@
         }
     }
 }
+
+.well {
+    min-height: 570px;
+    background-image: url("../images/well-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1c2028;
+
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__img {
+        z-index: 2;
+        position: absolute;
+        top: 66px;
+        left: 0;
+        // opacity: 0.3;
+    }
+
+    &__wrap {
+        max-width: 816px;
+        margin-top: 103px;
+        z-index: 3;
+    }
+    &__title-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__pretitle,
+    &__title {
+        // text-align: center;
+        text-transform: uppercase;
+    }
+    &__pretitle {
+        font-size: 52px;
+        line-height: 63px;
+        letter-spacing: 0.31em;
+        color: #2b3039;
+    }
+    &__title {
+        display: block;
+        width: 539px;
+        font-size: 43px;
+        line-height: 52px;
+        margin-right: 12px;
+        color: #1c2028;
+        padding-bottom: 17px;
+        margin-bottom: 28px;
+        @extend %mon-b-700;
+        border-bottom: 5px solid transparent;
+        border-image: linear-gradient(90deg, #2a97d5 12.99%, #2ac7d5 82.37%, #2ac7d5 82.37%);
+        border-image-slice: 1;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 22px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__text span {
+        @extend %mon-b-700;
+    }
+}
+
+.load {
+    min-height: 198px;
+    background-color: #2ac7d5;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // margin: 0 auto;
+        padding: 38px 0 28px;
+    }
+    &__title {
+        text-align: center;
+        max-width: 624px;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        @extend %mon-b-700;
+    }
+    &__link {
+        max-width: 80px;
+    }
+}
 // Content part ------------------ end ----------------------------------------
 
 .footer {
