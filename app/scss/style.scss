@@ -684,6 +684,27 @@
     &__item {
         margin-top: 30px;
     }
+    &__form {
+        height: 320px;
+    }
+    &__form-title {
+        margin-top: 15px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        color: $title;
+        font-size: 13px;
+        line-height: 18px;
+        @extend %mon-l-300;
+        text-transform: uppercase;
+    }
+    &__pass {
+        margin-left: 9px;
+    }
+    &__registration {
+        margin-right: 9px;
+    }
     &__num {
         font-size: 54px;
         line-height: 66px;
