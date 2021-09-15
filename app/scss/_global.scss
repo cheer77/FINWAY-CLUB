@@ -10,6 +10,11 @@ body {
     font-size: 18px;
     color: #fff;
     @extend %mon-r-400;
+    background-color: #1c2028;
+}
+
+body .cards {
+    background-color: #fff;
 }
 
 main {
