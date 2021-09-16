@@ -200,6 +200,29 @@
     }
 }
 
+.login {
+    height: 320px;
+
+    &__form-title {
+        margin-top: 15px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        color: $title;
+        font-size: 13px;
+        line-height: 18px;
+        @extend %mon-l-300;
+        text-transform: uppercase;
+    }
+    &__pass {
+        margin-left: 9px;
+    }
+    &__registration {
+        margin-right: 9px;
+    }
+}
+
 .well {
     min-height: 570px;
     background-image: url("../images/well-bg.jpg");
@@ -684,27 +707,6 @@
     &__item {
         margin-top: 30px;
     }
-    &__form {
-        height: 320px;
-    }
-    &__form-title {
-        margin-top: 15px;
-    }
-    &__box {
-        display: flex;
-        justify-content: space-between;
-        color: $title;
-        font-size: 13px;
-        line-height: 18px;
-        @extend %mon-l-300;
-        text-transform: uppercase;
-    }
-    &__pass {
-        margin-left: 9px;
-    }
-    &__registration {
-        margin-right: 9px;
-    }
     &__num {
         font-size: 54px;
         line-height: 66px;
@@ -735,6 +737,333 @@
     &__descr {
         max-width: 140px;
     }
+}
+
+.board {
+    margin: 31px 0 71px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left,
+    &__right {
+        width: 492px;
+    }
+
+    &__id {
+        max-width: 160px;
+        margin-bottom: 30px;
+    }
+    &__id-title {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        @extend %mon-l-300;
+    }
+    &__id-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__id-num {
+        color: $title;
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+
+    &__bill {
+        max-width: 492px;
+        min-height: 154px;
+        background-color: $bg;
+        padding: 18px 25px 22px 27px;
+    }
+    &__bill-title {
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+    &__bill-num {
+        color: $title;
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+    &__bill-box {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+        @extend %mon-l-300;
+    }
+
+    &__bill-refil {
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/icons/plus.svg");
+            top: -1px;
+            left: 0;
+        }
+    }
+    &__bill-out {
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/icons/rarrow-down.svg");
+            top: -1px;
+            left: 0;
+        }
+    }
+    &__bill-trasf {
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url("../images/icons/arrow-right.svg");
+            top: -1px;
+            left: 0;
+        }
+    }
+
+    &__deposit {
+        margin-top: 47px;
+        max-width: 492px;
+        min-height: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__deposit-left {
+        width: 217px;
+    }
+    &__deposit-title {
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        @extend %mon-b-700;
+    }
+    &__deposit-num {
+        color: $title;
+        font-size: 38px;
+        line-height: 72px;
+        letter-spacing: 0.06em;
+        margin-bottom: 20px;
+    }
+    &__deposit-btn {
+        background-color: $title;
+        color: $bg;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+        text-transform: uppercase;
+        border-radius: 8px;
+        width: 100%;
+        padding: 10px 5px;
+        transition: background-color 1s;
+        cursor: pointer;
+        &:hover {
+            background-color: $hover;
+        }
+    }
+    &__deposit-btn--mob {
+        display: none;
+        max-width: 105px;
+        height: 51px;
+        background-color: #2b3039;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+        font-size: 8px;
+        line-height: 10px;
+        letter-spacing: 0.06em;
+        padding-left: 40px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background-image: url("../images/icons/plus-mob.svg");
+            top: 12px;
+            left: 7px;
+        }
+    }
+
+    &__deposit-right {
+        margin-top: 31px;
+        max-width: 238px;
+        min-height: 128px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg;
+    }
+    &__deposit-img {
+        width: 42px;
+        height: 42px;
+    }
+    &__deposit-right-text {
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-top: 21px;
+        @extend %mon-l-300;
+    }
+
+    &__partner {
+        max-width: 100%;
+        background-color: $bg;
+        padding: 13px 22px 34px 18px;
+        margin-top: 49px;
+        text-transform: uppercase;
+    }
+    &__partner-box-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 28px;
+    }
+    &__partner-title {
+        max-width: 202px;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+    &__partner-sum {
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+    &__partner-box {
+        margin-top: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__partner-text {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        @extend %mon-l-300;
+    }
+    &__partner-num {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        color: $title;
+        @extend %mon-b-700;
+    }
+
+    &__progress {
+        background: #2b3039;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+        padding: 18px 25px 18px 22px;
+    }
+    &__progress-box {
+        position: relative;
+    }
+    &__span-hidden {
+        width: 447px;
+        height: 22px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        bottom: 18px;
+        z-index: 5;
+    }
+    &__progress-text {
+        margin-top: 9px;
+        margin-bottom: 9px;
+        font-size: 38px;
+        line-height: 13px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+
+    &__progress-num {
+        width: 100%;
+        max-width: 445px;
+    }
+}
+
+.irs-single,
+.irs-min,
+.irs-max {
+    display: none;
+}
+.irs-grid .small {
+    display: none;
+}
+.irs-grid .js-grid-text-4 {
+    display: none;
+}
+.irs-grid {
+    bottom: 5px;
+    width: 98% !important;
+    margin-left: 5px;
+}
+.irs-grid .irs-grid-pol {
+    background-color: #fff;
+    width: 2px;
+    &:last-child {
+        width: 0;
+    }
+}
+.irs-grid .irs-grid-pol:not([style*="display: none"]):nth-last-child(2) {
+    width: 0;
+}
+.irs--flat .irs-line {
+    height: 10px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+.irs--flat .irs-bar {
+    height: 10px;
+    background: linear-gradient(90.28deg, #2ac4d5 4.64%, #2aa3d5 95.31%), #2ac7d5;
+    border-radius: 25px;
+}
+.irs--flat .irs-handle {
+    top: 22px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+
+.irs--flat .irs-grid-text {
+    color: #fff;
+}
+
+.irs-grid-text {
+    font-size: 12px;
+    line-height: 15px;
+    bottom: -5px;
+    letter-spacing: 0.06em;
+    color: #fff;
 }
 
 // Content part ------------------ end ----------------------------------------
