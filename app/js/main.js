@@ -11,4 +11,22 @@ $(function () {
         rangeNum.innerHTML = this.value;
     };
 
+
+
+    $('.board__stat-btn').on('click', function (e) {
+
+
+        $('.board__stat-btn-img').toggleClass('board__stat-btn-img--active');
+        $('.board__stat-items-hidden').toggleClass('board__stat-items-hidden--active');
+
+    });
+
+    $('.board__structur-btn').on('click', function (e) {
+
+
+        $('.board__structur-btn-img').toggleClass('board__structur-btn-img--active');
+        $('.board__structur-items-hidden').toggleClass('board__structur-items-hidden--active');
+
+    });
+
 });

@@ -1009,6 +1009,198 @@
         width: 100%;
         max-width: 445px;
     }
+
+    &__stat {
+        margin-top: 34px;
+        text-transform: uppercase;
+    }
+    &__stat-title {
+        margin-bottom: 9px;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.06em;
+        color: $title;
+        @extend %mon-b-700;
+    }
+    &__stat-box,
+    &__stat-box-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__stat-box {
+        margin-bottom: 34px;
+    }
+    &__stat-type {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+    }
+    &__stat-box-wrap {
+        width: 299px;
+        background-color: $bg;
+        border-radius: 14px;
+    }
+    &__stat-operations,
+    &__stat-last {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+        color: #616773;
+        padding-left: 13px;
+    }
+    &__stat-last {
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+    &__stat-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-bottom: 8px;
+        padding: 5px 7px;
+    }
+    &__stat-id {
+        max-width: 44px;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+    }
+    &__stat-date {
+        max-width: 68px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+    }
+    &__stat-descr {
+        text-align: center;
+
+        width: 220px;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+    }
+    &__stat-sum {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        color: $title;
+        @extend %mon-b-700;
+    }
+    &__stat-sum-minus {
+        color: #c20799;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+    &__stat-item--even {
+        background-color: $bg;
+        border-radius: 7px;
+    }
+
+    &__stat-btn {
+        padding: 5px 4px;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-top: 12px;
+    }
+
+    &__stat-btn-img--active {
+        transform: rotateX(-180deg);
+    }
+
+    &__stat-items-hidden {
+        display: none;
+    }
+    &__stat-items-hidden--active {
+        transition: all 0.9s;
+        display: block;
+    }
+
+    &__structur {
+        margin-top: 34px;
+        text-transform: uppercase;
+    }
+    &__structur-title {
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.06em;
+        color: $title;
+        @extend %mon-b-700;
+    }
+    &__structur-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 6px;
+        padding: 0 7px;
+    }
+    &__structur-type {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+        @extend %mon-b-700;
+    }
+    &__structur-type-f {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+        margin-right: 70px;
+        @extend %mon-b-700;
+    }
+    &__structur-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 7px;
+    }
+    &__structur-id {
+        max-width: 44px;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+    }
+    &__structur-date {
+        max-width: 108px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.06em;
+    }
+
+    &__structur-sum {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        color: $title;
+        @extend %mon-b-700;
+    }
+    &__structur-item--even {
+        background-color: $bg;
+        border-radius: 7px;
+    }
+
+    &__structur-btn {
+        padding: 5px 4px;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-top: 12px;
+    }
+
+    &__structur-btn-img--active {
+        transform: rotateX(-180deg);
+    }
+
+    &__structur-items-hidden {
+        display: none;
+    }
+    &__structur-items-hidden--active {
+        transition: all 0.9s;
+        display: block;
+    }
 }
 
 .irs-single,
