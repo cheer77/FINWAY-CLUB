@@ -73,6 +73,7 @@
 
     &__inner {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         flex-wrap: wrap;
         padding-bottom: 73px;
@@ -80,7 +81,7 @@
 
     &__info,
     &__form {
-        margin-top: 58px;
+        margin: 58px 0 0 10px;
     }
     &__info {
         max-width: 522px;
@@ -337,6 +338,7 @@
         position: relative;
         perspective: 1000px;
         margin-bottom: 34px;
+        margin-right: 10px;
         &:last-child {
             margin-bottom: 0;
         }

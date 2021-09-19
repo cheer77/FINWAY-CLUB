@@ -1,0 +1,127 @@
+@media (max-width: 1079px) {
+    .cards {
+        &__items {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 997px) {
+    .container {
+        max-width: 850px;
+    }
+    .club {
+        &__inner {
+            justify-content: center;
+            padding-bottom: 73px;
+        }
+    }
+
+    .well {
+        &__img {
+            top: 66px;
+            left: 0;
+            opacity: 0.2;
+        }
+        &__inner {
+            justify-content: center;
+        }
+        &__wrap {
+            max-width: 816px;
+            margin-top: 79px;
+            padding: 0 11px;
+        }
+        &__title {
+            margin-bottom: 60px;
+        }
+    }
+
+    .cards {
+        background-size: auto;
+        &__item {
+            width: 270px;
+            max-height: 270px;
+        }
+        &__front {
+            display: none;
+        }
+
+        &__back {
+            max-width: 270px;
+            min-height: 270px;
+            backface-visibility: visible;
+        }
+        &__back {
+            transform: rotateY(0deg);
+        }
+        &__item:hover .cards__back {
+            transform: rotateY(0deg);
+        }
+    }
+
+    .plan {
+        padding: 79px 0;
+        &__inner {
+            justify-content: center;
+        }
+        &__info-text {
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+            margin-bottom: 18px;
+        }
+        &__box {
+            margin: 78px 0 0 22px;
+        }
+    }
+
+    .report {
+        &__items {
+            margin-top: 47px;
+            flex-direction: column-reverse;
+            max-width: 430px;
+        }
+
+        &__item {
+            margin-right: 0;
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__num-mob1 {
+            max-width: 90px;
+        }
+        &__num-mob2 {
+            max-width: 304px;
+        }
+        &__num-mob3 {
+            max-width: 335px;
+        }
+        &__stat {
+            margin-top: 51px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cards {
+        &__items {
+            justify-content: center;
+        }
+        &__front {
+            display: none;
+        }
+
+        &__back {
+            backface-visibility: visible;
+        }
+        &__back {
+            transform: rotateY(0deg);
+        }
+        &__item:hover .cards__back {
+            transform: rotateY(0deg);
+        }
+    }
+}
