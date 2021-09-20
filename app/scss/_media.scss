@@ -148,6 +148,259 @@
             height: 61px;
         }
     }
+
+    .board {
+        &__left,
+        &__right {
+            width: 325px;
+        }
+        &__right {
+            margin-left: 15px;
+        }
+        &__id {
+            display: none;
+        }
+        &__id--mob {
+            display: block;
+        }
+        &__inner {
+            margin-top: 53px;
+        }
+
+        &__bill {
+            min-height: 201px;
+            padding: 18px 22px 22px 27px;
+        }
+        &__bill-box {
+            margin-top: 29px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.06em;
+        }
+
+        &__bill-refil {
+            padding: 44px 0 0;
+            &::before {
+                width: 32px;
+                height: 32px;
+                background-image: url("../images/icons/plus-big.svg");
+                top: 0;
+                left: 19px;
+            }
+        }
+        &__bill-out {
+            padding: 44px 0 0;
+
+            &::before {
+                width: 32px;
+                height: 32px;
+                background-image: url("../images/icons/rarrow-down-big.svg");
+                top: 0;
+                left: 12px;
+            }
+        }
+        &__bill-trasf {
+            padding: 44px 0 0;
+            &::before {
+                width: 32px;
+                height: 32px;
+                background-image: url("../images/icons/arrow-right-big.svg");
+                top: 0;
+                left: 18px;
+            }
+        }
+
+        &__deposit {
+            margin-top: 44px;
+        }
+
+        &__deposit-left {
+            width: 158px;
+        }
+
+        &__deposit-num {
+            font-size: 38px;
+            line-height: 65px;
+            margin-bottom: 0px;
+        }
+
+        &__deposit-btn {
+            font-size: 13px;
+            line-height: 16px;
+            border-radius: 8px;
+            max-width: 158px;
+        }
+
+        &__deposit-right {
+            margin-top: 0;
+            max-width: 163px;
+        }
+        &__deposit-img {
+            width: 42px;
+            height: 42px;
+        }
+        &__deposit-right-text {
+            font-size: 13px;
+            line-height: 16px;
+        }
+        &__partner {
+            padding: 10px 10px 19px 14px;
+            margin-top: 44px;
+        }
+        &__partner-title {
+            max-width: 202px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__partner-sum {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__partner-text {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &__progress {
+            padding: 13px 17px 11px 16px;
+        }
+        &__progress-title {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__progress-text {
+            margin-top: 9px;
+            margin-bottom: 9px;
+            font-size: 29px;
+        }
+        &__span-hidden {
+            width: 310px;
+        }
+
+        &__stat {
+            margin-top: 65px;
+        }
+        &__stat-title {
+            margin-bottom: 4px;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__stat-box {
+            margin-bottom: 25px;
+        }
+        &__stat-type {
+            font-size: 9px;
+            line-height: 13px;
+        }
+        &__stat-box-wrap {
+            width: 227px;
+            background-color: $bg;
+            border-radius: 14px;
+        }
+        &__stat-operations,
+        &__stat-last {
+            font-size: 8px;
+            line-height: 10px;
+        }
+        &__stat-operations-img {
+            width: 19px;
+            height: 19px;
+        }
+        &__stat-last {
+            margin-bottom: 0px;
+        }
+        &__stat-item {
+            // margin-bottom: 8px;
+            padding: 2px 7px;
+        }
+        &__stat-id {
+            max-width: 44px;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.06em;
+        }
+        &__stat-date {
+            max-width: 68px;
+            text-align: center;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.06em;
+        }
+        &__stat-descr {
+            text-align: center;
+            width: 220px;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.06em;
+        }
+        &__stat-sum,
+        &__stat-sum-minus {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__structur {
+            margin-top: 60px;
+        }
+        &__structur-title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__structur-box {
+            margin: 10px 0 6px;
+            padding: 0 7px;
+        }
+        &__structur-type {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.06em;
+        }
+        &__structur-type-f {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.06em;
+            margin-right: 50px;
+        }
+        &__structur-item {
+            padding: 3px 7px;
+        }
+        &__structur-sum {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    .irs--flat .irs-line {
+        height: 6px;
+    }
+    .irs--flat .irs-bar {
+        height: 6px;
+    }
+    .irs-grid {
+        bottom: 9px;
+        width: 98% !important;
+        margin-left: 5px;
+    }
+    .irs-grid-text {
+        text-align: center;
+        font-size: 8px;
+        line-height: 10px;
+        bottom: 0px;
+    }
+    .js-grid-text-3 {
+        left: 78% !important;
+    }
+    .js-grid-text-2 {
+        left: 53% !important;
+    }
+    .js-grid-text-1 {
+        left: 27% !important;
+    }
+    .js-grid-text-0 {
+        left: 0.5% !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -212,6 +465,38 @@
 
         &__right {
             margin-top: 41px;
+        }
+    }
+}
+
+@media (max-width: 695px) {
+    .board {
+        &__id--mob {
+            // margin: 0 auto;
+        }
+        &__inner {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__left,
+        &__right {
+            width: 100%;
+        }
+        &__right {
+            margin-left: 0;
+        }
+        &__progress,
+        &__partner,
+        &__deposit-btn {
+            display: none;
+        }
+        &__progress--mob,
+        &__partner--mob,
+        &__deposit-btn--mob {
+            display: block;
+        }
+        &__span-hidden {
+            width: 695px;
         }
     }
 }
@@ -585,6 +870,107 @@
         &__form-btn {
             width: 285px;
             height: 45px;
+        }
+    }
+
+    .board {
+        &__inner {
+            margin-top: 20px;
+        }
+        &__bill {
+            min-height: 122px;
+        }
+        &__bill-title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__bill-num {
+            font-size: 29px;
+            line-height: 35px;
+        }
+        &__bill-box {
+            margin-top: 20px;
+        }
+        &__bill-refil {
+            padding-top: 0;
+            padding-left: 25px;
+            &::before {
+                width: 20px;
+                height: 20px;
+                background-image: url("../images/icons/plus.svg");
+                top: -1px;
+                left: 0;
+            }
+        }
+        &__bill-out {
+            padding-left: 25px;
+            padding-top: 0;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-image: url("../images/icons/rarrow-down.svg");
+                top: -1px;
+                left: 0;
+            }
+        }
+        &__bill-trasf {
+            padding-left: 25px;
+            padding-top: 0;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-image: url("../images/icons/arrow-right.svg");
+                top: -1px;
+                left: 0;
+            }
+        }
+
+        &__deposit {
+            min-height: 105px;
+            margin-top: 0px;
+        }
+        &__deposit-title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__deposit-num {
+            font-size: 29px;
+            line-height: 35px;
+        }
+        &__deposit-right {
+            margin-left: 5px;
+            margin-top: 0;
+            max-width: 135px;
+            min-height: 51px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        &__deposit-img {
+            margin-left: 5px;
+            width: 26px;
+            height: 26px;
+        }
+        &__deposit-right-text {
+            font-size: 8px;
+            line-height: 10px;
+            margin-top: 0px;
+        }
+
+        &__stat {
+            margin-top: 36px;
+        }
+        &__partner--mob {
+            margin-top: 35px;
+        }
+        .board__structur {
+            margin-top: 35px;
         }
     }
 

@@ -745,10 +745,20 @@
 
 .board {
     margin: 31px 0 71px;
-
+    &__id--mob {
+        display: none;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
+        // flex-wrap: wrap;
+    }
+
+    &__partner--mob {
+        display: none;
+    }
+    &__progress--mob {
+        display: none;
     }
 
     &__left,
@@ -781,7 +791,6 @@
     }
 
     &__bill {
-        max-width: 492px;
         min-height: 154px;
         background-color: $bg;
         padding: 18px 25px 22px 27px;
@@ -851,7 +860,6 @@
 
     &__deposit {
         margin-top: 47px;
-        max-width: 492px;
         min-height: 160px;
         display: flex;
         justify-content: space-between;
@@ -1079,7 +1087,6 @@
     }
     &__stat-descr {
         text-align: center;
-
         width: 220px;
         font-size: 12px;
         line-height: 15px;
